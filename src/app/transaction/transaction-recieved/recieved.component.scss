@@ -1,0 +1,105 @@
+$color-primary: #FFFFFF;
+$color-dark: #000;
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: $color-primary;
+    border: 3px;
+    padding: .7rem 2rem;
+    width: 80%;
+    transition: all .2s;
+    margin-top: 1.5rem;
+    margin-right: -3.25rem;
+    border-radius: 6px;
+
+    &:focus {
+      outline: none;
+      width: 30%;
+      background-color: $color-primary;
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: #ccc;
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: $color-primary;
+  }
+
+  &__button {
+    border: none;
+    background-color: $color-primary;
+    margin-top: 1.5rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-primary;
+  }
+}
+
+
+.extreme {
+  background-color: $color-primary;
+  box-shadow: 0 2rem 3rem rgba(0,0,0,.06);
+  padding: 1rem;
+  position: relative;
+  margin-top: 3rem;
+  width: 60%;
+  height: 60%;
+  margin-left: 30rem;
+  overflow: hidden;
+
+  &__user {
+    display: flex;
+    align-items: left;
+  }
+
+  &__photo {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+  }
+
+  &__user-box {
+    margin-right: auto;
+  }
+
+  &__user-detail {
+    font-size: 1rem;
+    color: $color-dark;
+    margin-right: 20rem;
+  }
+
+  &__user-copy {
+    font-size: 1rem;
+    color: $color-dark;
+    text-align: left;
+    margin-right: 2rem;
+  }
+
+  &__flip {
+    color: $color-dark;
+    font-size: 1rem;
+  }
+}

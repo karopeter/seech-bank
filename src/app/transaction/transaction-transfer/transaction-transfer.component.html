@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <img src="/assets/img/bank1.png" class="rounded float-start image--1" alt="">
+    </div>
+    <div class="col-6">
+      <img src="/assets/img/bank2.png" class="rounded float-end image--1" alt="">
+    </div>
+  </div>
+</div>
+
+<app-recipient></app-recipient>
+
+<section class="container">
+  <h1 class="heading--inset" style="margin-top: 4rem;">TRANSACTION DETAIL</h1>
+ 
+  <form>
+    <div class="input-group mb-3">
+      <span class="input-group-text" style="margin-top: 3rem;">$</span>
+      <span class="input-group-text" style="margin-top: 3rem;">120.50</span>
+      <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" style="margin-top: 3rem;" placeholder="change currency">
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Description(Optional)">
+    </div>
+   <div class="d-grid gap-2">
+     <button class="slide" type="button">Confirm</button>
+   </div>
+  </form>
+ </section>
+ <app-transaction-header></app-transaction-header>
+ <app-transfer-list></app-transfer-list>

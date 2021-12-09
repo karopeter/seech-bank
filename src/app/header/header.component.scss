@@ -1,0 +1,43 @@
+$color-light-purple:#8660C1;
+$color-dark:#000;
+
+.navbar {
+  background: #fff;
+  padding: 1em;
+
+  .logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: $color-light-purple;
+    font-size: 1.2rem;
+
+    span {
+     color: $color-dark;
+     padding: 1rem;
+    }
+  }
+
+  .start {
+    display: flex;
+    place-content: space-between;
+  }
+}
+
+.new-trem {
+   padding: .5rem;
+   margin-left: 70rem;
+}
+
+.set-color{
+  color: $color-light-purple;
+  font-weight: bold;
+}
+
+
+.line-adjust {
+  position: relative;
+  width: 60%;
+  height: 60%;
+}
+
+

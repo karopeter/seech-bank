@@ -1,0 +1,26 @@
+$color-light-purple: #8660C1;
+
+.heading--inset {
+  margin-top: 2rem;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 1.5rem;
+}
+
+.img--1,
+.img--2,
+.img--3 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.credit__card--2 {
+  width: 80%;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  border-radius: 6px;
+  background: $color-light-purple;
+}
